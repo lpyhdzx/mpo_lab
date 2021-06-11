@@ -14,12 +14,13 @@ setup(
     description="Tools for model compression based on methods from paper, 'Enabling Lightweight Fine-tuning for Pre-trained Language Model Compression based on Matrix Product Operators'",
     license="MIT",
     url="https://arxiv.org/abs/2106.02205", # paper url
-    packages=find_packages(exclude=('*.c')),
+    packages=find_packages(),
     ext_modules=[module1,module2],
     include_package_data=True,
     install_requires=[
-        'numpy>=1.19.2',
-        'torch>=1.8.0'
+        'numpy',
+        'torch',
+        'Cython'
     ],
     zip_safe=True
 )
